@@ -49,7 +49,7 @@ public class CustomHeaderWithRandomValue implements BurpExtension {
             public ActionResult performAction(SessionHandlingActionData sessionHandlingActionData) {
                 HttpRequest originalRequest = sessionHandlingActionData.request();
                 String randomValue = generateRandomValue();
-                HttpRequest newRequest = originalRequest.withAddedHeader(HEADER_NAME, randomValue);
+                HttpRequest newRequest = originalRequest.withHeader(HEADER_NAME, randomValue);
                 return actionResult(newRequest);
             }
 
