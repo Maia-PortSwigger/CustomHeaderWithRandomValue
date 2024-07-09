@@ -13,8 +13,8 @@ import static burp.api.montoya.http.sessions.ActionResult.actionResult;
 
 public class CustomHeaderWithRandomValue implements BurpExtension {
 
-    public static final String EXTENSION_NAME = "Custom Header With Random Value";
-    private static final String HEADER_NAME = "UUID"; // You can change this to customise the header name
+    private static final String EXTENSION_NAME = "Custom Header With Random Value";
+    private static final String HEADER_NAME = "Uuid"; // You can change this to customise the header name
 
     @Override
     public void initialize(MontoyaApi api) {

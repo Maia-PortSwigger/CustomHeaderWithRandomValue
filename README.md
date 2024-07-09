@@ -6,11 +6,11 @@ Custom Header With Random Value
  ---
 Compatible with Burp Suite Enterprise Edition
 
-Please note that extensions are written by third party users of Burp, and PortSwigger makes no warranty about their quality or usefulness for any particular purpose.
+Please note that extensions are written by third-party users of Burp, and PortSwigger makes no warranty about their quality or usefulness for any particular purpose.
 
 ---
 ## Usage
-1. Customise the header name using the HEADER_NAME variable if required. The default name is "UUID".
+1. Customise the header name using the `HEADER_NAME` variable if required. The default name is `Uuid`.
 2. Build the extension
 3. [Add the extension to the Burp Suite Enterprise Edition extension library](https://portswigger.net/burp/documentation/enterprise/user-guide/extensions), and add the extension to your required Site.
 4. [Configure your session handling rule](#configuring-your-session-handling-rule-in-burp-suite-professionalcommunity) in Burp Suite Professional to invoke the extension, using the required extension action handler and scope. An example session handling rule for the "Custom Header Action - Random UUID Value" action has been included for reference. 
@@ -65,14 +65,12 @@ Please note that extensions are written by third party users of Burp, and PortSw
 ```
 
 ## Troubleshooting
-We recommend testing this extension in Burp Suite Professional/Community Edition before using in Burp Suite Enterprise Edition.
-
-To test this extension in Burp Suite Enterprise Edition, you can configure an upstream proxy through Burp Suite Professional to view the requests and ensure that your token has been added appropriately.
+We recommend testing this extension in Burp Suite Professional/Community Edition before Burp Suite Enterprise Edition for easier troubleshooting. To test this extension in Burp Suite Enterprise Edition, you can configure an upstream proxy through Burp Suite Professional to view the requests and ensure that your header has been added appropriately.
 
 
 ## Using Gradle
 - If you do not have Gradle already installed, follow the installation instructions [here](https://gradle.org/install/).
-- Once Gradle is installed, run `gradle fatJar` from the installation directory using the command line.
+- Once Gradle is installed and you are ready to build the extension, run `./gradlew build` from the extension directory using the command line
 - Make sure you are using the latest version of Gradle.
 
 If no changes to the code are required, a prebuilt JAR file is available under Releases. It is preferable to compile your own JAR file.
