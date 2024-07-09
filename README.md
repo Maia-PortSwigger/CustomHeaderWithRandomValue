@@ -75,4 +75,4 @@ To test this extension in Burp Suite Enterprise Edition, you can configure an up
 - Once Gradle is installed, run `gradle fatJar` from the installation directory using the command line.
 - Make sure you are using the latest version of Gradle.
 
-<!-- If no changes to the code are required, a prebuilt JAR file is available under Releases. It is preferable to compile your own JAR file. -->
+If no changes to the code are required, a prebuilt JAR file is available under Releases. It is preferable to compile your own JAR file.
