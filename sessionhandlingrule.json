@@ -1,0 +1,30 @@
+{
+    "project_options":{
+        "sessions":{
+            "session_handling_rules":{
+                "rules":[
+                    {
+                        "actions":[
+                            {
+                                "action_name":"Custom Header Action - Random UUID Value",
+                                "enabled":true,
+                                "type":"invoke_extension"
+                            }
+                        ],
+                        "description":"Add UUID header to requests",
+                        "enabled":true,
+                        "exclude_from_scope":[],
+                        "include_in_scope":[],
+                        "named_params":[],
+                        "restrict_scope_to_named_params":false,
+                        "tools_scope":[
+                            "Scanner"
+                        ],
+                        "url_scope":"all",
+                        "url_scope_advanced_mode":false
+                    }
+                ]
+            }
+        }
+    }
+}
